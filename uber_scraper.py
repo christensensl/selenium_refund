@@ -18,11 +18,11 @@ browser.get('https://health.uber.com/v2/organization/f3724445-c04c-5f5a-9c9b-495
 
 #logging in using id's and xpath *still need to find a way to avoid recaptcha
 def uber_login():
-	email_login = browser.find_element_by_id('useridInput').send_keys('123easyrides@123homecares.com')
+	email_login = browser.find_element_by_id('useridInput').send_keys('email login')
 	next_button_email = browser.find_element_by_xpath("//button[@class='btn btn--arrow btn--full']")
 	next_button_email.click()
 	time.sleep(2)
-	password_login = browser.find_element_by_id('password').send_keys('123Austin#')
+	password_login = browser.find_element_by_id('password').send_keys('password')
 	next_button_password = browser.find_element_by_xpath("//button[@class='btn btn--arrow btn--full push--top']")
 	next_button_password.click()
 
